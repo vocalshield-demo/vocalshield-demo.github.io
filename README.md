@@ -1,10 +1,10 @@
-# VoiceShield — Anonymous Supplementary Material
+# VocalShield — Anonymous Supplementary Material
 
 This repository contains the static reviewer artifact for an anonymous submission.
 
 ## Contents
 
-- Four LibriTTS samples compared across Original, seven baselines, and VoiceShield
+- Four LibriTTS samples compared across Original, seven baselines, and VocalShield
 - A simple, responsive comparison interface
 - A recorded Desktop/Web workflow demonstration
 - A recorded Mobile workflow demonstration and a reserved Jetson Orin Nano slot

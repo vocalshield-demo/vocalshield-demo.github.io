@@ -7,9 +7,9 @@
     <meta name="color-scheme" content="light" />
     <meta
       name="description"
-      content="Anonymous supplementary material with VoiceShield and baseline audio comparisons and system demonstrations."
+      content="Anonymous supplementary material with VocalShield and baseline audio comparisons and system demonstrations."
     />
-    <title>VoiceShield: Practical and Perceptually Transparent Real-Time Voice Protection against AI Cloning</title>
+    <title>VocalShield: Practical and Perceptually Transparent Real-Time Voice Protection against AI Cloning</title>
     <link rel="stylesheet" href="assets/style.css?v=20260827-realtime-row-1" />
     <script src="assets/clone-data.js?v=20260827-model-labels-1" defer></script>
     <script src="assets/clone-evaluation.js?v=20260818-responsive-1" defer></script>
@@ -19,7 +19,7 @@
     <main id="top">
       <header class="paper-header shell" aria-labelledby="page-title">
         <p class="submission-note">Anonymous submission · Supplementary material</p>
-        <h1 id="page-title">VoiceShield: Practical and Perceptually Transparent Real-Time Voice Protection against AI Cloning</h1>
+        <h1 id="page-title">VocalShield: Practical and Perceptually Transparent Real-Time Voice Protection against AI Cloning</h1>
         <p class="anonymous-authors">Anonymous authors</p>
 
         <div class="abstract-block">
@@ -32,20 +32,20 @@
               often rely on expensive per-utterance optimization and
               waveform-/spectrogram-level adversarial perturbations, making them difficult
               to scale or deploy in real time while potentially degrading perceptual and
-              audio fidelity. In this paper, we present VoiceShield, a practical and
+              audio fidelity. In this paper, we present VocalShield, a practical and
               perceptually transparent voice-protection system for both recorded and
-              real-time speech. VoiceShield protects speech in the latent space of a
+              real-time speech. VocalShield protects speech in the latent space of a
               pretrained generative speech model, leveraging its structural prior to produce
               speech-supported identity-disrupting modifications through a frozen decoder.
-              Instead of optimizing each utterance separately, VoiceShield learns a
+              Instead of optimizing each utterance separately, VocalShield learns a
               feed-forward latent protector that generates these modifications for unseen
               speech in a single pass, with an identity-aware soft mask focusing them on
-              speaker-relevant latent features. Building on this design, VoiceShield extends
+              speaker-relevant latent features. Building on this design, VocalShield extends
               protection to continuously arriving speech through context-aware streaming,
               overlap-aware rendering, and a lightweight distilled vocoder. An
               audio-structure-preserving output mechanism further retains the original
               sampling rate and stereo structure. We evaluate offline and real-time
-              VoiceShield against seven state-of-the-art defenses across ten recent
+              VocalShield against seven state-of-the-art defenses across ten recent
               open-source and commercial voice-cloning systems. The offline version achieves
               the strongest overall protection--quality trade-off, while the real-time
               version closely preserves its protection and perceptual quality. We further
@@ -129,7 +129,7 @@
           <p>
             We selected four utterances from the LibriTTS dataset. Each column
             contains one source utterance, all seven baseline outputs, and the corresponding
-            VoiceShield output. Playback is limited to one clip at a time for easier comparison.
+            VocalShield output. Playback is limited to one clip at a time for easier comparison.
           </p>
         </div>
 
@@ -212,19 +212,19 @@
           </div>
 
           <div class="audio-row protected-row" role="row">
-            <div class="method-id protected" role="rowheader"><span>VoiceShield</span></div>
-            <div class="audio-cell protected" role="cell"><span class="mobile-label">Sample 01</span><audio controls preload="none" aria-label="VoiceShield, Sample 01"><source src="audio/sample-01-voiceshield.wav" type="audio/wav" />Your browser does not support audio playback.</audio></div>
-            <div class="audio-cell protected" role="cell"><span class="mobile-label">Sample 02</span><audio controls preload="none" aria-label="VoiceShield, Sample 02"><source src="audio/sample-02-voiceshield.wav" type="audio/wav" />Your browser does not support audio playback.</audio></div>
-            <div class="audio-cell protected" role="cell"><span class="mobile-label">Sample 03</span><audio controls preload="none" aria-label="VoiceShield, Sample 03"><source src="audio/sample-03-voiceshield.wav" type="audio/wav" />Your browser does not support audio playback.</audio></div>
-            <div class="audio-cell protected" role="cell"><span class="mobile-label">Sample 04</span><audio controls preload="none" aria-label="VoiceShield, Sample 04"><source src="audio/sample-04-voiceshield.wav" type="audio/wav" />Your browser does not support audio playback.</audio></div>
+            <div class="method-id protected" role="rowheader"><span>VocalShield</span></div>
+            <div class="audio-cell protected" role="cell"><span class="mobile-label">Sample 01</span><audio controls preload="none" aria-label="VocalShield, Sample 01"><source src="audio/sample-01-voiceshield.wav" type="audio/wav" />Your browser does not support audio playback.</audio></div>
+            <div class="audio-cell protected" role="cell"><span class="mobile-label">Sample 02</span><audio controls preload="none" aria-label="VocalShield, Sample 02"><source src="audio/sample-02-voiceshield.wav" type="audio/wav" />Your browser does not support audio playback.</audio></div>
+            <div class="audio-cell protected" role="cell"><span class="mobile-label">Sample 03</span><audio controls preload="none" aria-label="VocalShield, Sample 03"><source src="audio/sample-03-voiceshield.wav" type="audio/wav" />Your browser does not support audio playback.</audio></div>
+            <div class="audio-cell protected" role="cell"><span class="mobile-label">Sample 04</span><audio controls preload="none" aria-label="VocalShield, Sample 04"><source src="audio/sample-04-voiceshield.wav" type="audio/wav" />Your browser does not support audio playback.</audio></div>
           </div>
 
           <div class="audio-row protected-row" role="row">
-            <div class="method-id protected" role="rowheader"><span>VoiceShield<sub>RT</sub></span></div>
-            <div class="audio-cell protected" role="cell"><span class="mobile-label">Sample 01</span><audio controls preload="none" aria-label="VoiceShield RT, Sample 01"><source src="audio/sample-01-voiceshield-rt.wav" type="audio/wav" />Your browser does not support audio playback.</audio></div>
-            <div class="audio-cell protected" role="cell"><span class="mobile-label">Sample 02</span><audio controls preload="none" aria-label="VoiceShield RT, Sample 02"><source src="audio/sample-02-voiceshield-rt.wav" type="audio/wav" />Your browser does not support audio playback.</audio></div>
-            <div class="audio-cell protected" role="cell"><span class="mobile-label">Sample 03</span><audio controls preload="none" aria-label="VoiceShield RT, Sample 03"><source src="audio/sample-03-voiceshield-rt.wav" type="audio/wav" />Your browser does not support audio playback.</audio></div>
-            <div class="audio-cell protected" role="cell"><span class="mobile-label">Sample 04</span><audio controls preload="none" aria-label="VoiceShield RT, Sample 04"><source src="audio/sample-04-voiceshield-rt.wav" type="audio/wav" />Your browser does not support audio playback.</audio></div>
+            <div class="method-id protected" role="rowheader"><span>VocalShield<sub>RT</sub></span></div>
+            <div class="audio-cell protected" role="cell"><span class="mobile-label">Sample 01</span><audio controls preload="none" aria-label="VocalShield RT, Sample 01"><source src="audio/sample-01-voiceshield-rt.wav" type="audio/wav" />Your browser does not support audio playback.</audio></div>
+            <div class="audio-cell protected" role="cell"><span class="mobile-label">Sample 02</span><audio controls preload="none" aria-label="VocalShield RT, Sample 02"><source src="audio/sample-02-voiceshield-rt.wav" type="audio/wav" />Your browser does not support audio playback.</audio></div>
+            <div class="audio-cell protected" role="cell"><span class="mobile-label">Sample 03</span><audio controls preload="none" aria-label="VocalShield RT, Sample 03"><source src="audio/sample-03-voiceshield-rt.wav" type="audio/wav" />Your browser does not support audio playback.</audio></div>
+            <div class="audio-cell protected" role="cell"><span class="mobile-label">Sample 04</span><audio controls preload="none" aria-label="VocalShield RT, Sample 04"><source src="audio/sample-04-voiceshield-rt.wav" type="audio/wav" />Your browser does not support audio playback.</audio></div>
           </div>
         </div>
       </section>
@@ -261,7 +261,7 @@
             Every column contains the same source utterance and its protected outputs.
           </p>
           <p>
-            All files are mono, 16-bit PCM WAV recordings. Original and VoiceShield
+            All files are mono, 16-bit PCM WAV recordings. Original and VocalShield
             clips are 24 kHz; baseline outputs retain their method-produced native
             sampling rate and duration.
           </p>
@@ -292,7 +292,7 @@
 
     <footer>
       <div class="shell footer-inner">
-        <span>VoiceShield · Anonymous supplementary material</span>
+        <span>VocalShield · Anonymous supplementary material</span>
       </div>
     </footer>
   </body>
