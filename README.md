@@ -6,7 +6,7 @@ This repository contains the static reviewer artifact for an anonymous submissio
 
 - Four LibriTTS samples compared across Original, seven baselines, and VocalShield
 - A simple, responsive comparison interface
-- A recorded Desktop/Web workflow demonstration
+- A 30.4-second desktop demonstration of real-time protection in online meetings
 - A recorded Mobile workflow demonstration and a reserved Jetson Orin Nano slot
 - A machine-readable audio manifest with checksums
 
