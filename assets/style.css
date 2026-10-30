@@ -318,12 +318,12 @@ h2 {
 }
 
 .demo-card-copy {
-  min-height: 190px;
-  padding: 24px;
+  min-height: 0;
+  padding: 16px 24px;
 }
 
 .demo-card h3 {
-  margin-bottom: 8px;
+  margin-bottom: 0;
   color: var(--color-foreground);
   font-size: 21px;
   font-weight: 700;
