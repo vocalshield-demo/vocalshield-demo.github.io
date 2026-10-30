@@ -337,13 +337,6 @@ h2 {
   line-height: 1.55;
 }
 
-.demo-card p.demo-credit {
-  min-height: 0;
-  margin: 14px 0 0;
-  font-size: 12px;
-  line-height: 1.5;
-}
-
 .mode-tag {
   display: inline-flex;
   align-items: center;
