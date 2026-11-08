@@ -10,7 +10,7 @@
       content="Anonymous supplementary material with VocalShield and baseline audio comparisons and system demonstrations."
     />
     <title>VocalShield: Practical and Perceptually Transparent Real-Time Voice Protection against AI Cloning</title>
-    <link rel="stylesheet" href="assets/style.css?v=compact-demo-20261108" />
+    <link rel="stylesheet" href="assets/style.css?v=aligned-demo-20261108" />
     <script src="assets/clone-data.js?v=anonymous-release-20261108" defer></script>
     <script src="assets/clone-evaluation.js?v=anonymous-release-20261108" defer></script>
     <script src="assets/app.js?v=anonymous-release-20261108" defer></script>
@@ -39,32 +39,34 @@
               <p class="section-number">Video demo</p>
               <h2 id="demo-title">System demonstration</h2>
             </div>
-            <p>
+          </div>
+
+          <div class="demo-content">
+            <div class="demo-feature" aria-labelledby="demo-title">
+              <article class="demo-card">
+                <div class="video-preview">
+                  <img class="demo-video" src="assets/videos/vocalshield-demo.jpg" alt="VocalShield running on desktop and Jetson Orin Nano" width="960" height="540" loading="lazy">
+                  <button class="video-open-button" type="button"
+                    data-video-src="assets/videos/vocalshield-demo.mp4"
+                    data-video-title="VocalShield — Desktop and Edge"
+                    aria-label="Play VocalShield demonstration">
+                    <span class="video-play-mark" aria-hidden="true">▶</span>
+                    <span>Watch demo</span>
+                  </button>
+                </div>
+                <div class="demo-card-copy">
+                  <p class="demo-index">Demo</p>
+                  <h3>Desktop + Edge</h3>
+                </div>
+              </article>
+            </div>
+            <p class="demo-description">
               The demonstration shows real-time operation on desktop and edge
               platforms. The strength control shown in the video is an
               application-level feature designed to let users select their preferred
               protection strength; all experimental results reported in the paper are
               obtained using Level 3.
             </p>
-          </div>
-
-          <div class="demo-feature" aria-labelledby="demo-title">
-            <article class="demo-card">
-              <div class="video-preview">
-                <img class="demo-video" src="assets/videos/vocalshield-demo.jpg" alt="VocalShield running on desktop and Jetson Orin Nano" width="960" height="540" loading="lazy">
-                <button class="video-open-button" type="button"
-                  data-video-src="assets/videos/vocalshield-demo.mp4"
-                  data-video-title="VocalShield — Desktop and Edge"
-                  aria-label="Play VocalShield demonstration">
-                  <span class="video-play-mark" aria-hidden="true">▶</span>
-                  <span>Watch demo</span>
-                </button>
-              </div>
-              <div class="demo-card-copy">
-                <p class="demo-index">Demo</p>
-                <h3>Desktop + Edge</h3>
-              </div>
-            </article>
           </div>
         </div>
       </section>
