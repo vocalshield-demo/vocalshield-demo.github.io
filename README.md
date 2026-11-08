@@ -9,7 +9,7 @@ This repository contains supplementary material for anonymous peer review.
 - Original and protected speech cloned with ten voice-cloning systems
 - A machine-readable audio manifest with checksums
 
-All audio is mono, 16-bit PCM WAV. Each method retains its native sampling rate
+Audio is provided in WAV format. Each method retains its native sampling rate
 and produced duration. The page has no analytics, cookies, external fonts,
 or third-party media embeds.
 
