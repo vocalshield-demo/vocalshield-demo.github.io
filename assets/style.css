@@ -967,4 +967,4 @@ footer {
 }
 
 .abstract-copy p + p { margin-top: 1em; }
-.demo-feature { width: min(100%, 1000px); margin-inline: auto; }
+.demo-feature { width: min(100%, 400px); margin-inline: auto; }
