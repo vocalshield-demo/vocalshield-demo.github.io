@@ -7,10 +7,6 @@
       "label": "Original"
     },
     {
-      "key": "mcadams",
-      "label": "McAdams"
-    },
-    {
       "key": "antifake",
       "label": "AntiFake"
     },
@@ -35,6 +31,10 @@
       "label": "RoVo"
     },
     {
+      "key": "enkidu",
+      "label": "Enkidu"
+    },
+    {
       "key": "vocalshield",
       "label": "VocalShield"
     },
@@ -57,16 +57,6 @@
           "frames": 455280,
           "duration_seconds": 18.97,
           "sha256": "4809afb276e5b28520adf10ce8e4492f716b53d4c264fb223c0b0a4229c33e7e"
-        },
-        "mcadams": {
-          "path": "audio/sample-01-mcadams.wav",
-          "bytes": 607084,
-          "sample_rate_hz": 16000,
-          "channels": 1,
-          "bit_depth": 16,
-          "frames": 303520,
-          "duration_seconds": 18.97,
-          "sha256": "916b2700395e2f7bb6a2a7d5c94de7e4f3b3fc4e81bacf8361cf891700efbcb4"
         },
         "antifake": {
           "path": "audio/sample-01-antifake.wav",
@@ -128,6 +118,16 @@
           "duration_seconds": 18.97,
           "sha256": "1cfd3f0abe2ae0e351044b9c2954998dc67bc2a1e4f9a19cbfcfdbe5227b2270"
         },
+        "enkidu": {
+          "path": "audio/sample-01-enkidu.wav",
+          "bytes": 607084,
+          "sample_rate_hz": 16000,
+          "channels": 1,
+          "bit_depth": 16,
+          "frames": 303520,
+          "duration_seconds": 18.97,
+          "sha256": "5fbc2e7340cf3089d9fd477c98acdea2ea3ec02cf4070ebb272dfc102b62806b"
+        },
         "vocalshield": {
           "path": "audio/sample-01-vocalshield.wav",
           "bytes": 910604,
@@ -162,16 +162,6 @@
           "frames": 581520,
           "duration_seconds": 24.23,
           "sha256": "5f1bf9febc250ebff2add77f65c10cb650014366e786b1a2ca9b0ce285cbd9bc"
-        },
-        "mcadams": {
-          "path": "audio/sample-02-mcadams.wav",
-          "bytes": 775404,
-          "sample_rate_hz": 16000,
-          "channels": 1,
-          "bit_depth": 16,
-          "frames": 387680,
-          "duration_seconds": 24.23,
-          "sha256": "8e2717e6ae4482ea32b149ddeb6eb4e936bdb5cfd345ae80f1875a0593ccbc5b"
         },
         "antifake": {
           "path": "audio/sample-02-antifake.wav",
@@ -233,6 +223,16 @@
           "duration_seconds": 24.23,
           "sha256": "159dc2697dff842a43b871b681b96fb312e65a048229dbe24b280bc1115eab57"
         },
+        "enkidu": {
+          "path": "audio/sample-02-enkidu.wav",
+          "bytes": 775404,
+          "sample_rate_hz": 16000,
+          "channels": 1,
+          "bit_depth": 16,
+          "frames": 387680,
+          "duration_seconds": 24.23,
+          "sha256": "429936e64385305f7d3f2da9c8501fa2f40a0410d80cc60d2b9edbe7ad0dbf42"
+        },
         "vocalshield": {
           "path": "audio/sample-02-vocalshield.wav",
           "bytes": 1163084,
@@ -267,16 +267,6 @@
           "frames": 437520,
           "duration_seconds": 18.23,
           "sha256": "e2f021be5f4a111819db35fc24c463311e30fb34f09052e536a07a9b87d8a4b2"
-        },
-        "mcadams": {
-          "path": "audio/sample-03-mcadams.wav",
-          "bytes": 583404,
-          "sample_rate_hz": 16000,
-          "channels": 1,
-          "bit_depth": 16,
-          "frames": 291680,
-          "duration_seconds": 18.23,
-          "sha256": "6b9b7b45dfacce08ad4e0bfe0229b123c49e9e90c234e18dbf30e0098e08ad40"
         },
         "antifake": {
           "path": "audio/sample-03-antifake.wav",
@@ -338,6 +328,16 @@
           "duration_seconds": 18.23,
           "sha256": "fa9061d166f7668a8a5775be669bbabe84a3ecd70f0c92dbf963653a4b269fcf"
         },
+        "enkidu": {
+          "path": "audio/sample-03-enkidu.wav",
+          "bytes": 583404,
+          "sample_rate_hz": 16000,
+          "channels": 1,
+          "bit_depth": 16,
+          "frames": 291680,
+          "duration_seconds": 18.23,
+          "sha256": "5f4645be502cf10216c3c5b707c1cab54f1a667118e5c09b275e3d771c495d37"
+        },
         "vocalshield": {
           "path": "audio/sample-03-vocalshield.wav",
           "bytes": 875084,
@@ -372,16 +372,6 @@
           "frames": 361680,
           "duration_seconds": 15.07,
           "sha256": "d7fb3a95b93d6a9ee6322177c9aeabdc067b399976e243cb01cef6f1b350faba"
-        },
-        "mcadams": {
-          "path": "audio/sample-04-mcadams.wav",
-          "bytes": 482284,
-          "sample_rate_hz": 16000,
-          "channels": 1,
-          "bit_depth": 16,
-          "frames": 241120,
-          "duration_seconds": 15.07,
-          "sha256": "f96c58a2058b49d0ace9068a49584c6ed575c060b184986a17aff1f2d6c4f336"
         },
         "antifake": {
           "path": "audio/sample-04-antifake.wav",
@@ -442,6 +432,16 @@
           "frames": 361680,
           "duration_seconds": 15.07,
           "sha256": "91fda767e3f70f808e7c2a6a8ddb5992305f92367f21a6ac79f8403bb2ef6b03"
+        },
+        "enkidu": {
+          "path": "audio/sample-04-enkidu.wav",
+          "bytes": 482284,
+          "sample_rate_hz": 16000,
+          "channels": 1,
+          "bit_depth": 16,
+          "frames": 241120,
+          "duration_seconds": 15.07,
+          "sha256": "f492b19b52bf355118f9d27518f99960be0007ca366d157a232ffcba4c293806"
         },
         "vocalshield": {
           "path": "audio/sample-04-vocalshield.wav",
