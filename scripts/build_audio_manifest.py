@@ -14,13 +14,13 @@ AUDIO = ROOT / "audio"
 OUTPUT = ROOT / "audio-manifest.json"
 METHODS = [
     ("original", "Original", "sample-{sample}-original.wav"),
-    ("mcadams", "McAdams", "sample-{sample}-mcadams.wav"),
     ("antifake", "AntiFake", "sample-{sample}-antifake.wav"),
     ("safespeech", "SafeSpeech", "sample-{sample}-safespeech.wav"),
     ("pop", "POP", "sample-{sample}-pop.wav"),
     ("e2e", "E2E-VGuard", "sample-{sample}-e2e.wav"),
     ("voiceblock", "VoiceBlock", "sample-{sample}-voiceblock.wav"),
     ("rovo", "RoVo", "sample-{sample}-rovo.wav"),
+    ("enkidu", "Enkidu", "sample-{sample}-enkidu.wav"),
     ("vocalshield", "VocalShield", "sample-{sample}-vocalshield.wav"),
     (
         "vocalshield_rt",
