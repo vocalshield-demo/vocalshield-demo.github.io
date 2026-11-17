@@ -46,8 +46,17 @@
               <article class="demo-card">
                 <div class="video-preview">
                   <img class="demo-video" src="assets/videos/vocalshield-demo.jpg" alt="VocalShield running on desktop and Jetson Orin Nano" width="960" height="540" loading="lazy">
+                  <!-- Original GitHub-hosted playback retained for rollback.
                   <button class="video-open-button" type="button"
                     data-video-src="assets/videos/demo_video.mp4?v=ee4455564b37"
+                    data-video-title="VocalShield — Desktop and Edge"
+                    aria-label="Play VocalShield demonstration">
+                    <span class="video-play-mark" aria-hidden="true">▶</span>
+                    <span>Watch demo</span>
+                  </button>
+                  -->
+                  <button class="video-open-button" type="button"
+                    data-youtube-id="XUS2pI477ZE"
                     data-video-title="VocalShield — Desktop and Edge"
                     aria-label="Play VocalShield demonstration">
                     <span class="video-play-mark" aria-hidden="true">▶</span>
@@ -228,11 +237,44 @@
           </button>
         </div>
         <p id="video-dialog-status" class="video-dialog-status" role="status" aria-live="polite" hidden></p>
+        <!-- Original MP4 player retained for rollback.
         <video id="video-dialog-player" class="video-dialog-player" controls preload="metadata" playsinline>
           Your browser does not support MP4 video playback.
         </video>
+        -->
+        <iframe id="video-dialog-youtube" class="video-dialog-player"
+          title="VocalShield — Desktop and Edge Demonstration"
+          width="960" height="540" style="border: 0; aspect-ratio: 16 / 9; height: auto;"
+          allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </dialog>
+
+    <script>
+      // YouTube preview. Restore the commented MP4 button and player to revert.
+      (() => {
+        const dialog = document.querySelector('#video-dialog');
+        const player = document.querySelector('#video-dialog-youtube');
+        const title = document.querySelector('#video-dialog-title');
+        if (!dialog || !player) return;
+
+        for (const button of document.querySelectorAll('[data-youtube-id]')) {
+          button.addEventListener('click', () => {
+            const videoId = button.dataset.youtubeId;
+            if (!/^[A-Za-z0-9_-]{11}$/.test(videoId)) return;
+            for (const audio of document.querySelectorAll('audio')) audio.pause();
+            title.textContent = button.dataset.videoTitle || 'System demonstration';
+            dialog.showModal();
+            // Load YouTube only after the visitor chooses to watch.
+            player.src = 'https://www.youtube-nocookie.com/embed/' + videoId
+              + '?autoplay=1&rel=0&playsinline=1';
+          });
+        }
+
+        // Unload the iframe on Close, Escape, or backdrop dismissal to stop audio.
+        dialog.addEventListener('close', () => player.removeAttribute('src'));
+      })();
+    </script>
 
     <footer>
       <div class="shell footer-inner">
